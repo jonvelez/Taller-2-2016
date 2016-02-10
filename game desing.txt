@@ -1,0 +1,5 @@
+el juego aún no tiene nombre.
+
+en el se debe recolectar varios objetos para desbloquear la meta.
+habrá varios enemigos que te impedirán el avanzar por el mapa, y funcionas con gavedad, por lo que debes saltar. también cada cierto tiempo 
+habrá varias alarmas aleatorias que modificarán el mapa, y daran paso a sucesos aleatorios.
