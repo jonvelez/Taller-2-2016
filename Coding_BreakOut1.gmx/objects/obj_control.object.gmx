@@ -3,7 +3,7 @@
   <spriteName>spr_scorebox</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,6 +30,33 @@ draw_set_color(c_white) ;
 
 score = 0;
 lives = 3;
+
+go = true;
+alpha = 0;
+if go = false
+{
+    if alpha &lt;1
+        {
+        alpha += 0.05;
+        }
+    else
+    {
+    ini_open("score.ini");
+    if score &gt; ini_read_real("score", "0", 0)
+        {
+        ini_write_real("score", "0", 0);    
+        }
+    ini_close();
+    room_goto(rm_intro)
+    }
+}
+else
+{
+if instance_exists(obj_brick) = false
+    {
+    room_restart();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -53,8 +80,11 @@ lives = 3;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_text(x+60,6, score);
-draw_text(x+60,22,lives);
+draw_text(x,2, score);
+draw_text(x,15,lives);
+draw_set_alpha(alpha);
+draw_rectangle(0, 0, room_width, room_height, false);
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

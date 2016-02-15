@@ -11,17 +11,27 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_scorebox</sprite>
+    <sprite>sprites\spr_title</sprite>
+    <sprite>sprites\spr_play</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bck_stars</background>
+    <background>background\bck_tiles</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_move_out.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_wall</object>
     <object>objects\obj_brick</object>
     <object>objects\obj_bat</object>
     <object>objects\obj_ball</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_intro</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_intro</room>
     <room>rooms\rm_level1</room>
   </rooms>
   <help>
@@ -30,6 +40,6 @@
   <TutorialState>
     <IsTutorial>-1</IsTutorial>
     <TutorialName>C:\Users\User\AppData\Local\GameMaker-Studio\tutorials\Coding_BreakOut\</TutorialName>
-    <TutorialPage>8</TutorialPage>
+    <TutorialPage>13</TutorialPage>
   </TutorialState>
 </assets>
