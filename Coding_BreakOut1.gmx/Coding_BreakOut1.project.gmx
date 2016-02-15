@@ -6,28 +6,30 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_principal</sprite>
+    <sprite>sprites\spr_Brick</sprite>
+    <sprite>sprites\spr_bat</sprite>
     <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_globito</sprite>
-    <sprite>sprites\spr_enemigos</sprite>
+    <sprite>sprites\spr_ball</sprite>
+    <sprite>sprites\spr_scorebox</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_principal</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_globito</object>
-    <object>objects\obj_enemigos</object>
+    <object>objects\obj_brick</object>
+    <object>objects\obj_bat</object>
+    <object>objects\obj_ball</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\rm_level1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
   <TutorialState>
-    <IsTutorial>0</IsTutorial>
-    <TutorialName></TutorialName>
-    <TutorialPage>0</TutorialPage>
+    <IsTutorial>-1</IsTutorial>
+    <TutorialName>C:\Users\User\AppData\Local\GameMaker-Studio\tutorials\Coding_BreakOut\</TutorialName>
+    <TutorialPage>8</TutorialPage>
   </TutorialState>
 </assets>
