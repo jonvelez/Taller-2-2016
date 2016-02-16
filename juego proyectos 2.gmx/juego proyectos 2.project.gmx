@@ -10,17 +10,32 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_globito</sprite>
     <sprite>sprites\spr_enemigos</sprite>
+    <sprite>sprites\spr_score</sprite>
+    <sprite>sprites\spr__perdio</sprite>
+    <sprite>sprites\spr_intro</sprite>
+    <sprite>sprites\spr_ganar</sprite>
+    <sprite>sprites\spr_win</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_principal</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_globito</object>
     <object>objects\obj_enemigos</object>
+    <object>objects\obj_control</object>
+    <object>objects\obj_lose</object>
+    <object>objects\obj_intro</object>
+    <object>objects\obj_ganar</object>
+    <object>objects\obj_win</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\rm_introduccion</room>
+    <room>rooms\rm_juego</room>
+    <room>rooms\rm_perdio</room>
+    <room>rooms\rm_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
